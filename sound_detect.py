@@ -69,4 +69,6 @@ output_csv = 'combined_sound_times.csv'
 threshold = 20000
 interval = 0.1  # 기록 간격을 0.1초로 설정
 
+extract_audio('./videos/Recreating_Vintage_Cartoon_Sounds_(HARD).mp4', './videos/Recreating_Vintage_Cartoon_Sounds_(HARD).wav')
+plot_waveform('./videos/Recreating_Vintage_Cartoon_Sounds_(HARD).wav')
 process_videos(video_directory, threshold, interval, output_csv)
