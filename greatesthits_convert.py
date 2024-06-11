@@ -76,8 +76,7 @@ for file in txt_files:
         first_column_data.append(file_first_column)
 
 # 데이터프레임으로 변환합니다.
-# df = pd.DataFrame(first_column_data)
-df = pd.read_csv('output.csv')
+df = pd.DataFrame(first_column_data)
 
 # 파일 이름을 mp4로 변경
 df.iloc[:, 0] = df.iloc[:, 0].apply(lambda x: x.replace('.txt', '.mp4'))
